@@ -6,6 +6,6 @@ KEYWORDS
 Anna McNeill Whistler; Russia; St. Petersburg; Romanov; history; George Washington Whistler; railways; James Whistler; art history; art education
 
 
-![image](https://user-images.githubusercontent.com/129789586/229601642-40b59e28-a614-48de-9d4f-026e22e200e9.png)
 <!--
 **anna-whistler-diary/anna-whistler-diary** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!--Image of the page exists: [image](https://user-images.githubusercontent.com/129789586/229601642-40b59e28-a614-48de-9d4f-026e22e200e9.png)
