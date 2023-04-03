@@ -1,0 +1,870 @@
+/* imports */
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+@font-face {
+    font-family: 'Garamond';
+    src: url('./font/garamondDotted.woff') format('woff');
+}
+
+/* resets */
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+/* global */
+
+.wrapper{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 95%;
+    background-color: #fff;
+}
+
+header{
+    height: 136px;
+}
+
+.body{
+    height: 77%;
+    overflow-y: scroll;
+}
+
+footer {
+	bottom: 6px;
+	position: absolute;
+	width: 95%;
+}
+
+
+/* BANNER */
+
+/* Slideshow container */
+ 
+.slideshow-container {
+  position: absolute;
+  background: white;
+  left: 28px;
+  height: 148px;
+}
+
+/* Hide the images by default */
+.mySlides {
+	position: relative;
+	overflow: hidden;
+	height: 136px;
+	width: 964px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -42px;
+  padding: 16px;
+  color: #90755a;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+
+.spreadhdr {
+	position: absolute;
+	top: 12px;
+	left: 34px;
+    background-color: rgba(203,211,207,.7);
+    font-family: 'Noto Sans';
+	font-variant: small-caps;
+    font-size: 10pt;
+	width: 100%;
+	max-width: 25cm;
+}
+
+.spread {
+	position: absolute;
+	top: -85px;
+	left: 18px;
+	width: 100%;
+	max-width: 25.5cm;
+}
+
+.spread nav{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    padding: 3px;
+    font-family: 'Noto Sans';
+    font-size: 7pt;
+    text-decoration: none;
+    width: 100%;
+}
+
+.spread p.Heading-4 {
+	font-size: 10pt;
+}
+
+.navbar {
+	width: 100%;
+	max-width: 25cm;
+	height: 100%;
+}
+
+.leftnav {
+	margin: 0 25px;
+}
+
+.rightnav {
+	left: 53%;
+	width: 47%;
+	position: absolute;
+	top: 0;
+    text-align: justify;
+}
+
+.rightnav a {
+	display: inline-block;
+}
+
+.rightnav:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+.myImages {
+	position: absolute;
+	max-width: 6622px;
+	height: 136px;
+	transform: translateX(-2811px);
+	transition: all .5s ease-out;
+}
+
+p{
+    line-height: 170%;
+    letter-spacing: 0.3px;
+}
+
+p.Body-Text{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    text-indent: 25px;
+    line-height: 1.4;
+    margin-left: 20px;
+    max-width: 25cm;
+}
+
+p.Body-Text-Image{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    text-indent: 25px;
+    line-height: 1.4;
+    margin-left: 20px;
+    max-width: 700px;
+}
+
+
+/* no indent */
+p.Body-Text-2{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-left: 20px;
+    max-width: 25cm;
+}
+
+
+/*  no indent; centred*/
+p.Body-Text-3{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 25cm;
+    text-align:center;
+}
+
+p.Quote{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 70px;
+    margin-right: 70px;
+    max-width: 21.5cm;
+}
+
+p.Quote-2{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    text-indent:25px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 70px;
+    margin-right: 70px;
+    max-width: 21.5cm;
+}
+
+p.Bibliography{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    margin-bottom:4px;
+	margin-left:50px;
+	margin-top:0;
+	orphans:99;
+	text-align:left;
+	text-indent:-25px;
+	max-width: 25cm;
+    widows:1;
+}
+
+p.Asterisk{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 20px;
+    line-height: 1.4;
+    margin-left: 0px;
+    text-align:center;
+    max-width: 25cm;
+}
+
+
+p.Heading-1{
+    font-family: 'Noto Sans';
+    font-size: 2.4em;
+    font-variant: small-caps;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+}
+
+p.Heading-1-Image{
+    font-family: 'Noto Sans';
+    font-size: 2.4em;
+    font-variant: small-caps;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgb(100, 100, 100);
+    max-width: 725px;
+}
+
+p.Heading-2{
+    font-family: 'Noto Sans';
+    font-size: 1.8em;
+    font-variant: small-caps;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    margin-left: 20px;
+    max-width: 25cm;
+}
+
+p.Heading-3{
+    font-family: 'Noto Sans';
+    font-size: 1.6em;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    max-width: 25cm;
+}
+
+p.Heading-4{
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+}
+
+
+p.Heading-5{
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+}
+
+p.Heading-6{
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-indent: 2em;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+}
+
+/* For Endnotes 1-99 */
+
+p.Endnote-text{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 58px;
+    text-indent: -28px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+/* second (indented) paragraph in note*/
+p.Endnote-text2{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 58px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-indent:25px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+p.Endnote-text-after-quote{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 58px;
+    text-indent: 0px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+p.Endnote-text-after-quote2{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 68px;
+    text-indent: 0px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+p.Endnote-quotation{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 115px;
+    margin-right: 80px;
+    max-width: 20.5cm;
+}
+
+/* second (indented) paragraph in quotation */
+p.Endnote-quotation2{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    text-indent:25px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 115px;
+    margin-right: 80px;
+    max-width: 20.5cm;
+}
+
+/* For Endnotes 100-999 */
+
+p.Endnote-text3{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 58px;
+    text-indent: -38px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+/* Endnote text2 for Endnoted 100-999 */
+
+p.Endnote-text4{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 58px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-indent:25px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+/* for Endnotes 1000 and up */
+
+p.Endnote-text5{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 68px;
+    text-indent: -48px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+/* Endnote text2 for Endnotes 1000 and up */
+
+p.Endnote-text6{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 60px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-indent:25px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 24cm;
+}
+
+p.Epigraph {
+	background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.4;
+	margin-bottom:0;
+	margin-left:36px;
+	margin-right:36px;
+	margin-top:0;
+	orphans:1;
+	text-align:center;
+	widows:1;
+    max-width: 25cm;
+}
+
+p.Salutation {
+	background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size:18px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.4;
+	text-align:right;
+	widows:1;
+    max-width: 25cm;
+}
+
+p.dedication{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 3px;
+    max-width: 25cm;
+    text-align:center;
+}
+
+
+p.Image{
+    max-width: 25cm;
+    text-align:center;
+    margin-bottom:14px;    
+}
+
+figure{
+    max-width:600px;
+    text-align:center;
+    margin-bottom:20px;
+    margin-left:40px;
+    padding:20px;
+}
+
+figcaption{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size:14px;
+    text-align:left;
+    margin-left:20px;
+    margin-right:30px;
+    width:auto;
+    
+}
+
+.nomargin {
+	margin: 0;
+}
+
+img{
+    max-width: 23.5cm;
+    margin-left:0;
+    margin-bottom:14px;
+    
+}
+
+.primary{
+    margin-bottom: 20px;
+}
+
+
+
+@media all and (min-width: 600px){
+
+    .container{
+        padding-right: 200px;
+    }
+    .primary{
+        float: left;
+        padding-right: 60px;
+        width: 100%;
+        padding-left: 125px;
+        max-width: 800px;
+    }
+    .secondary{
+        float: right;
+        margin-right: -200px;
+        width: 200px;
+        padding-top: 60px;
+    }
+
+
+.heading{
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+
+
+a:link{
+    color: #90755a;
+    font-weight: bold;
+    text-decoration: none;
+
+
+}
+a:visited{
+    text-decoration: none;
+    color: #6e4b27;
+    font-weight: normal;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: #58473d;
+
+}
+
+
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.figure{
+    font-size: 14px;
+}
+
+p.sources{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+
+table{
+    background-color: #fff;
+    color: rgb(100, 100, 100);
+    font-family: 'Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    max-width: 25cm;
+}
+
+td{
+    vertical-align:top;
+}
+
+li{
+    padding-bottom: 20px;
+}
+
+ul.leaders{
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 700;
+    padding: 3px;
+    margin: 3px;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+    overflow-x: hidden;
+    list-style: none
+}
+
+ul.leaders2{
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 700;
+    padding: 3px;
+    margin-left: 50px;
+    color: rgb(100, 100, 100);
+    max-width: 25cm;
+    overflow-x: hidden;
+    list-style: none
+}
+
+ul.leaders li:before{
+    float: left;
+    width: 0;
+    white-space: nowrap
+    }
+
+ul.leaders span:first-child{
+    padding-right: 0.33em;
+    background: white
+}
+
+ul.leaders span + span{
+    float: right;
+    padding-left: 0.33em;
+    background: white
+}
+
+ul.leaders2 li:before{
+    float: left;
+    width: 0;
+    white-space: nowrap;
+}
+
+ul.leaders2 span:first-child{
+    padding-right: 0.33em;
+    background: white
+}
+
+ul.leaders2 span + span{
+    float: right;
+    padding-left: 0.33em;
+    background: white
+}
+
+/* Italics */
+span.CharOverride-1{
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Underline */
+span.CharOverride-U{
+    text-decoration:underline;
+    font-weight: normal;
+}
+
+/* Strikethrough */
+span.CharOverride-S {
+	text-decoration:line-through;
+}
+
+/* Bold */
+span.CharOverride-B {
+	font-style:normal;
+	font-weight:bold;
+}
+
+/* note number superscript */
+span.CharOverride-2{
+    font-size: 65%;
+    vertical-align: super;
+}
+
+/* small caps */
+span.CharOverride-8 {
+	color:#000000;
+	font-variant:small-caps;
+	text-transform:none;
+}
+
+/* ordinal superscript */
+span.CharOverride-9 {
+	font-size:80%;
+	vertical-align:super;
+	line-height: 0.9;
+}
+
+/* ordinal superscript underline */
+span.CharOverride-9U {
+	font-size:80%;
+	vertical-align:super;
+	text-decoration:underline;
+}
+
+/* image caption superscript italic */
+span.CharOverride-Caption-Superscript {
+	font-family:"Adobe Garamond Pro", serif;
+	font-size:80%;
+	font-style:italic;
+	vertical-align:super;
+}
+	
+
+
+/* for when the span has to stay but have no effect */
+
+span.CharOverride-0 {
+	color: rgb(100, 100, 100);
+}
+
+
+/* These paragraph overrides are for the formatting for the appendix poem. */
+
+p.ParaOverride-1 {
+	text-indent: 300px;
+}
+p.ParaOverride-2 {
+	margin-bottom:10px;
+}
+p.ParaOverride-3 {
+	margin-bottom:30px;
+}
+
+number{
+    border-bottom: 1px solid;
+}
+
+/* Russian accent for angled ' = &#8242; */
+
+/* ç = &#231; */
+
+/*  ellipses = &#8230; */
+
+/*  to remove <span>s I don't want = 
+<span your special descriptor here>((.|\n)*?)</span> = $1 */
+
+/* to put spaces back in after dot chars 
+
+"ar-SA">([^\x00-\x7F])+</span>([^ ,.])
+"ar-SA">$1</span>&nbsp;$2
+*/
+
+
+/* to remove generated image height overrides 
+
+ delete 
+  class="_idGenObjectAttribute-." and then
+  class="_idGenObjectAttribute-.." */
