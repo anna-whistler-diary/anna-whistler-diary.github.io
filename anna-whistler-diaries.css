@@ -27,7 +27,7 @@ header{
 }
 
 .body{
-    height: 76%;
+    height: calc(100% - 219px);
     overflow-y: scroll;
 }
 
@@ -43,10 +43,12 @@ footer {
 /* Slideshow container */
  
 .slideshow-container {
-  position: absolute;
-  background: white;
-  left: 28px;
-  height: 148px;
+    position: fixed;
+    background: white;
+    left: 20px;
+    height: 148px;
+    max-width: 964px;
+    width: calc(100% - 40px);
 }
 
 /* Hide the images by default */
@@ -54,7 +56,7 @@ footer {
 	position: relative;
 	overflow: hidden;
 	height: 136px;
-	width: 964px;
+	width: 100%;
 }
 
 /* Next & previous buttons */
@@ -86,15 +88,15 @@ footer {
 
 
 .spreadhdr {
-	position: absolute;
-	top: 12px;
-	left: 34px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
     background-color: rgba(203,211,207,.7);
     font-family: 'Noto Sans';
-	font-variant: small-caps;
+    font-variant: small-caps;
     font-size: 10pt;
-	width: 100%;
-	max-width: 25cm;
+    width: calc(100% - 40px);
+    max-width: 25cm;
 }
 
 .spread {
