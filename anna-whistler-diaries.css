@@ -37,6 +37,9 @@ footer {
 	width: 95%;
 }
 
+#cover:hover {
+	opacity: 5%;
+}
 
 /* BANNER */
 
