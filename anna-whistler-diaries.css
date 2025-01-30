@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Noto+Sans';
 @font-face {
     font-family: 'Garamond';
-    src: url('./font/GaramondDotted.woff') format('woff');
+    src: url('./font/garamondDotted.woff') format('woff');
 }
 
 /* resets */
@@ -27,7 +27,7 @@ header{
 }
 
 .body{
-    height: calc(100% - 219px);
+    height: 77%;
     overflow-y: scroll;
 }
 
@@ -37,21 +37,16 @@ footer {
 	width: 95%;
 }
 
-#cover:hover {
-	opacity: 5%;
-}
 
 /* BANNER */
 
 /* Slideshow container */
  
 .slideshow-container {
-    position: fixed;
-    background: white;
-    left: 20px;
-    height: 148px;
-    max-width: 964px;
-    width: calc(100% - 40px);
+  position: absolute;
+  background: white;
+  left: 28px;
+  height: 148px;
 }
 
 /* Hide the images by default */
@@ -59,7 +54,7 @@ footer {
 	position: relative;
 	overflow: hidden;
 	height: 136px;
-	width: 100%;
+	width: 964px;
 }
 
 /* Next & previous buttons */
@@ -91,15 +86,15 @@ footer {
 
 
 .spreadhdr {
-    position: absolute;
-    top: 12px;
-    left: 20px;
+	position: absolute;
+	top: 12px;
+	left: 34px;
     background-color: rgba(203,211,207,.7);
     font-family: 'Noto Sans';
-    font-variant: small-caps;
+	font-variant: small-caps;
     font-size: 10pt;
-    width: calc(100% - 40px);
-    max-width: 25cm;
+	width: 100%;
+	max-width: 25cm;
 }
 
 .spread {
@@ -135,12 +130,11 @@ footer {
 }
 
 .rightnav {
-    left: 53%;
-    width: 47%;
-    position: absolute;
-    top: 0;
+	left: 53%;
+	width: 47%;
+	position: absolute;
+	top: 0;
     text-align: justify;
-    padding-right: 20px;
 }
 
 .rightnav a {
@@ -596,6 +590,11 @@ figcaption{
     margin-left:20px;
     margin-right:30px;
     width:auto;
+    
+}
+
+.figcaption-2{
+    margin-left:40px;
     
 }
 
